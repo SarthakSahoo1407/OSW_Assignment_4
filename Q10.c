@@ -6,20 +6,20 @@
 float calculateTaxiFare(float distance) {
 
 
-    float totalFare;
-    float distanceInMeters = distance * METERPERKM;
-    float variableFareIncrement = distanceInMeters / METERSPERINC;
-    totalFare = BASEFARE + (VARIABLEFARE * variableFareIncrement);
-    return totalFare;
+    float fare;
+    float d = distance * METERPERKM;
+    float inc = d / METERSPERINC;
+    fare = BASEFARE + (VARIABLEFARE * inc);
+    return fare;
 }
 
 int main() {
-    float distanceTraveled;
-    float totalFare;
+    float d;
+    float fare;
     printf("Enter the distance traveled in kilometers: ");
-    scanf("%f", &distanceTraveled);
-    totalFare = calculateTaxiFare(distanceTraveled);
-    printf("The total fare for the taxi ride is $%.2f\n", totalFare);
+    scanf("%f", &d);
+    fare = calculateTaxiFare(d);
+    printf("The total fare for the taxi ride is $%.2f\n", fare);
 
     return 0;
 }

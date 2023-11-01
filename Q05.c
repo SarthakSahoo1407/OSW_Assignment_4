@@ -1,6 +1,5 @@
 #include <stdio.h>
 void fun1(int n);
-
 void fun2(int n);
 
 void fun1(int n)
@@ -22,6 +21,6 @@ void fun2(int n)
 }
 
 int main(){
-    fun1(15);
+    fun1(5);
     return 0;
 }

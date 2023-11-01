@@ -3,7 +3,8 @@ int main(void)
 {
     int x, y, m, n;
     scanf("%d%d", &x, &y);
-    /* Assume x > 0 and y > 0 */ m = x;
+    /* Assume x > 0 and y > 0 */ 
+    m = x;
     n = y;
     while (m != n)
     {
